@@ -9,3 +9,10 @@ console.log(siravij[siravij.length-1])
 console.log(typeof(siravij[siravij.length-2]))
 // storing arr
 console.log(typeof(siravij[siravij.length-1]))
+for (i in siravij){
+    console.log("printing",i,":",siravij[i])
+}
+// for (const i of siravij){
+//     console.log("printing 2",i,":",siravij[i])
+//
+// }
