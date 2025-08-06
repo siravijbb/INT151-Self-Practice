@@ -28,5 +28,16 @@ let something = ['old','array',...siravij]
 console.log(something)
 let a = new Array()
 console.log(a)
+// new array 5 empt array
 a = new Array(5)
 console.log(a)
+let b = Array.from(a) // copy a
+let c = Array.of(b) // create array with item b
+
+
+// destru
+const anarry = [5,10,25,35,3]
+let [,,ja] = anarry
+console.log(ja)
+let [,,, ...js] = anarry
+console.log(js)
