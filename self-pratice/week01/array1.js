@@ -16,3 +16,17 @@ for (i in siravij){
 //     console.log("printing 2",i,":",siravij[i])
 //
 // }
+// for (let i in siravij) {
+//     console.log(siravij)
+//     console.log("poping : ",siravij.pop())
+//     console.log(siravij.length)
+//
+//     console.log("shift : ",siravij.shift())
+//     console.log(siravij.length)
+// }
+let something = ['old','array',...siravij]
+console.log(something)
+let a = new Array()
+console.log(a)
+a = new Array(5)
+console.log(a)
