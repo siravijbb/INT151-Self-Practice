@@ -1,0 +1,2 @@
+Week 1:
+โดยWeekนี้จะเป็นการปัดฝุ่นการใช้ Javascript ในการ Document Manipuration โดยปกติในบางframeworkสามารถใช้ท่า {hello} ได้ แต่โดยในjs เราต้องประกาศอีกที
