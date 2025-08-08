@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
 
+<body>
+    <p>Hello <p id="notworld">World!</p>
+    <p class="notclass"></p>
 </body>
+<script>
+    document.getElementById('notworld').innerHTML = `Change!` // this change inner html so we can do something with it insted of mutipage
+    document.getElementsByClassName('notclass')[0].innerHTML = `Why not using class? so tailwind css will be easier`
+</script>
 </html>
