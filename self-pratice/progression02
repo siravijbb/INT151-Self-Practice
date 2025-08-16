@@ -1,0 +1,8 @@
+this week we learn in keys in obj, obj in ref (pointer) to memory location
+in obj, there will "keys" and value assosatate others
+value can contain array or value  which array can contain key called nested key
+in shallowequality we compare lenght and each key to have same
+
+//
+to compare obj, ajarn said we can convert to json then chck as well as it would be text compare text
+however it would be overhead due to convert to text to check but in small number

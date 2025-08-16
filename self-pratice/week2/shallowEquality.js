@@ -10,17 +10,17 @@ let book2 = {
 }
 
 function shallowequality(obj1, obj2) {
-    let keys1 = Object.keys(book1)
-    let keys2 = Object.keys(book2)
-    console.log("key 1 of obj 1: ",keys1)
+    let keys1 = Object.keys(obj1)
+    let keys2 = Object.keys(obj2)
+    console.log("key 1 of obj 1: ",keys1) // print list of key in both obj
     console.log("key 2 of obj 2: ",keys2)
-    if(keys1.length !== keys2.length){
+    if(keys1.length !== keys2.length){ // compare both list of key using lenght (which in both same lenght but diff will pass)
         console.log("key 1 of obj 1: ",keys1.length)
         console.log("key 2 of obj 2: ",keys2.length)
         return false
     }
 
-for (let key of keys1){
+for (let key of keys1){ // detail check both
     console.log("key: ",key)
     console.log("for loop key 1 of obj 1: ",obj1[key])
     console.log("for loop key 2 of obj 2: ",obj2[key])
