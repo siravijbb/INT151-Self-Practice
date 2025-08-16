@@ -20,13 +20,16 @@ function shallowequality(obj1, obj2) {
         return false
     }
 
-for (let key in keys1){
+for (let key of keys1){
     console.log("key: ",key)
     console.log("for loop key 1 of obj 1: ",obj1[key])
     console.log("for loop key 2 of obj 2: ",obj2[key])
     if(obj1[key] !== obj2[key]){
         console.log("key 1 of obj 1: ",obj1[key])
-        console.log("key 2 of obj 2: ",obj2[key])    }
+        console.log("key 2 of obj 2: ",obj2[key])
+        console.log("key", key," of 1 :, ",obj1[key], ' !== ', obj2[key])
+        return false
+    }
 }
 return true
 }
