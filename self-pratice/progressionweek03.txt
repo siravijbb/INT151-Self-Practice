@@ -1,0 +1,3 @@
+this week it try using map filter and reduce fuction
+by using theese funcion we can reduce time spending on looping array each value or thing in array
+insted we write function to select only what we need only not entire loop;
