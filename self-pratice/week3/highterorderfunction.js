@@ -30,8 +30,11 @@ const students = [
 let filteredstudents = students.filter(function(student) {
     return student.score > 50;
 })
-let listofstudent = [] ;
-filteredstudents.filter(function(student) {return listofstudent.push(filteredstudents.name)})
+let listofstudent = filteredstudents.map(function(student) {
+    return student.name;
+});
+
+// co pilot suggested   by usubg map fuction to return only student.name; this method is ok since we dont need the score value
 console.log(filteredstudents);
 console.log(listofstudent);
 // Expected: ["Alice", "Charlie"]
