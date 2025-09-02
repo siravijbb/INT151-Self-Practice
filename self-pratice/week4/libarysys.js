@@ -25,9 +25,25 @@ class Book  {
 
 }
 module.exports = { Book }
-// Example usage:
-const book1 = new Book('B1', 'Clean Code', 'Robert C. Martin', 2008)
-console.log(book1.getInfo()) // "Clean Code by Robert C. Martin (2008)"
-console.log(book1.isAvailable()) // true
-book1.toggleAvailability()
-console.log(book1.isAvailable()) // false
+// // Example usage:
+// const book1 = new Book('B1', 'Clean Code', 'Robert C. Martin', 2008)
+// console.log(book1.getInfo()) // "Clean Code by Robert C. Martin (2008)"
+// console.log(book1.isAvailable()) // true
+// book1.toggleAvailability()
+// console.log(book1.isAvailable()) // false
+
+let listofBook = {}
+
+function createBook(id, title, author, yearPublished, isAvailable){
+    return new Book(id, title, author, yearPublished, isAvailable)
+}
+
+function addListofBook(bookObj){
+    listofBook = {  ...listofBook,
+        [bookObj.id]: bookObj }
+    return bookObj.id
+}
+addListofBook(createBook('B1', 'Clean Code', 'Robert C. Martin', 2008))
+addListofBook(createBook('B2', 'Clean Code', 'Robert C. Martin', 2008))
+console.log(listofBook)
+
