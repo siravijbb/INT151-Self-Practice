@@ -1,5 +1,5 @@
 // copied some code from assignment
-// logic written by me with help of advice of chatgpt
+// logic written by me with help of advice of chatgpt and stackoverflow
 class Book  {
     constructor(id,title,author="",yearPublished=null,isAvailable=true) {
         if(!id || !title){
@@ -50,4 +50,10 @@ console.log(listofBook)
 function deletebook(key){
     delete listofBook[key];
     return true
+}
+function editbook(id,title,author,year){
+    if (!(id in listofBook)){
+        throw "No book with id found"
+    }
+    // TODO:
 }
