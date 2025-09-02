@@ -1,5 +1,5 @@
 // copied some code from assignment
-
+// logic written by me with help of advice of chatgpt
 class Book  {
     constructor(id,title,author="",yearPublished=null,isAvailable=true) {
         if(!id || !title){
@@ -47,3 +47,7 @@ addListofBook(createBook('B1', 'Clean Code', 'Robert C. Martin', 2008))
 addListofBook(createBook('B2', 'Clean Code', 'Robert C. Martin', 2008))
 console.log(listofBook)
 
+function deletebook(key){
+    delete listofBook[key];
+    return true
+}
